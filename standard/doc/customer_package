@@ -1,0 +1,9 @@
+To make PyCharm complete function for customer package
+(1) make a package with __init__.py (empty is OK)
+(2) Edit PyCharm setting
+'PyCharm -> Preferences -> Project Interpreter' or 'File -> Setting -> Project Interpreter'
+Press 'setting' (gear icon on the right top) -> '+' to add 'more' -> add 'Interpreter path'
+to add customer package path
+
+It is convenient to make pyenv or virtualenv to save and manage the packages for
+different usages.

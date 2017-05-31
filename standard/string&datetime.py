@@ -3,6 +3,7 @@
 #
 
 import datetime
+import time
 
 test_str1 = '1234'
 
@@ -26,3 +27,9 @@ print(datetime.date.today())
 print(datetime.datetime.today())
 print(datetime.datetime.today().strftime('%Y/%m/%d %H:%M:%S'))
 print("tomorrow is " + (datetime.date.today() + datetime.timedelta(days=1)).strftime('%Y/%m/%d'))
+
+# format string
+t = time.gmtime()
+from datetime import datetime
+print(u'GMT: %d/%d/%d %d:%d' % (t.tm_year, t.tm_mon, t.tm_mday, t.tm_hour, t.tm_min))
+print(u'Today is {2}-{1}-{0}'.format(datetime.today().year, datetime.today().month, datetime.today().day))
