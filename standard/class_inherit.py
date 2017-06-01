@@ -2,7 +2,6 @@
 # call parent's method
 # instance method, class method,
 
-
 import time
 
 
@@ -22,6 +21,7 @@ class Country:
         return u'Today is %d/%d/%d %d:%d' % (t.tm_year, t.tm_mon, t.tm_mday, t.tm_hour + time_area, t.tm_min)
 
 
+# child class
 class City(Country):
     def __init__(self, country_name, city_name):
         super().__init__(country_name)  # the same to blow
@@ -50,4 +50,3 @@ for cls in classes:
 print(Country.get_country_time(9))  # Japanese time area is east 9
 # access class value
 print(u"There are %d countries in the world now." % Country.num_in_earth)
-
