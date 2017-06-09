@@ -1,6 +1,7 @@
 # class inherit
 # call parent's method
 # instance method, class method,
+# check install property
 
 import time
 
@@ -50,3 +51,12 @@ for cls in classes:
 print(Country.get_country_time(9))  # Japanese time area is east 9
 # access class value
 print(u"There are %d countries in the world now." % Country.num_in_earth)
+
+# check property
+print(hasattr(classes[0], 'country_name'))
+print(hasattr(classes[0], 'city_name'))
+print(hasattr(classes[0], 'person_name'))
+# check instance
+print(isinstance(classes[0], City))
+print(isinstance(classes[0], Country))
+print(isinstance(classes, list))

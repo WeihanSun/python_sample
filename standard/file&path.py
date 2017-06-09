@@ -75,5 +75,10 @@ city2 = test_module.City('China', 'Bejing')
 print(city1.city_name)
 print(city1 == city2)  # call parent's overload function ==
 
+# separator
+print(os.sep)
+print(os.pathsep)
+print(os.extsep)
+
 
 

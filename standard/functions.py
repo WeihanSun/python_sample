@@ -2,6 +2,8 @@
 # customer's package
 # lambda function (no function name)
 # yield function (use next(), use less memory)
+# callable: check function callable
+
 
 def func1(*args):
     print(type(args))
@@ -29,11 +31,17 @@ def func3(p1, *p2, **p3):
     print(type(p3['num']))
     print('unknown' in p3)
 
+# dict only
+def func4(**p4):
+    print(p4)
+    print(p4['name'])
+
 if __name__ == '__main__':
     func1(1, 2, 3, 4, 5)
     func2(1, 2, 3, 4, 5)
     func3(1, 2, 3, 4, 5, name='fun3', num=2)
     func3(1, 2, 3, name='new1', num=2, unknown=False)
+    func4(name='p4', num=2)
 
 # customer's package
 import sys
@@ -63,4 +71,7 @@ print(gen_sample)
 for i in gen_sample:
     print(i)
 
+# function callable
+print(callable(fun_l))
+print(callable(func_y))
 
