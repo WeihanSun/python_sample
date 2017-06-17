@@ -1,6 +1,4 @@
-#!/usr/bin/python
-
-# simple.py
+# wx tutorial menu, toolbar
 # Show a frame with menu bar, toolbar, status bar, pop menu
 
 import wx
@@ -79,8 +77,8 @@ class Example_Frame(wx.Frame):
         self.toolbar.EnableTool(wx.ID_EXIT, False)
         self.toolbar.Realize()
         # add status bar
-        self.statusbar = self.CreateStatusBar()
-        self.statusbar.SetStatusText('Ready')
+        self.statusbar = self.CreateStatusBar(3)
+        self.statusbar.SetStatusText('Ready',2)
         # bind right down
         self.popMenu = MyPopupMenu(self)
         self.Bind(wx.EVT_RIGHT_DOWN, self.OnRightDown)

@@ -1,0 +1,2 @@
+#To get Japanese Stock Market information you need to install jsm
+pip install jsm

@@ -1,3 +1,11 @@
+# wx tutorial layout
+# boxsizer, panel, static text, textCtrl, button, checkbox
+# (1) create panel
+# (2) create vbox and hboxes
+# (3) add widgets to hboxes and add hbox to vbox
+# (4) panel.SetSizer(vbox)
+
+
 import wx
 
 
@@ -60,7 +68,7 @@ class Example(wx.Frame):
         btn2 = wx.Button(panel, label='Close', size=(70, 30))
         hbox5.Add(btn2, flag=wx.LEFT | wx.BOTTOM, border=5)
         vbox.Add(hbox5, flag=wx.ALIGN_RIGHT | wx.RIGHT, border=10)
-        panel.SetSizer(vbox)
+        panel.SetSizer(vbox) # add vbox
 
 if __name__ == '__main__':
     app = wx.App()
